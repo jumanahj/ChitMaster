@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chit Master</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #e0e0e0, #b3b3b3);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .logo img {
+            width: 200px;
+            height: 200px;
+            animation: bounce 2s infinite;
+        }
+
+        .title {
+            font-size: 3em;
+            margin: 20px 0;
+            animation: slideInFromLeft 1.5s ease-out;
+        }
+
+        .info {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            animation: slideInFromRight 1.5s ease-out;
+        }
+
+        .button-container {
+            animation: zoomIn 1.5s ease-out;
+        }
+         
+        .get-started-button {
+            text-decoration: none;
+            background-color: #333;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .get-started-button1 {
+            text-decoration: none;
+            background-color: #333;
+            color: #fff;
+            padding:15px;
+            border-radius: 5px;
+            font-size: 1.0em;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+
+        .get-started-button:hover {
+            background-color: #555;
+            transform: scale(1.05);
+        }
+       .get-started-button1:hover {
+            background-color: #555;
+            transform: scale(1.00);
+        }
+
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes slideInFromLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInFromRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.png" alt="Chit Master Logo">
+        </div>
+        <h1 class="title">Chit Master</h1>
+        <div class="info">
+            <p>Welcome to Chit Master, your trusted partner in chit fund management.</p>
+            <p>Join us to manage your chits, participate in auctions, and stay updated with your financial activities.</p>
+        </div>
+        <div class="button-container">
+            <a href="user_current_scheme - Copy.php" class="get-started-button">Get Started</a>
+        </div>
+        <div class="button-container">
+        <br><br>
+       <a href ="company_login (1).php" class="get-started-button1"> FOR ADMIN USE CLICK HERE </a>
+       </div>
+    </div>
+</body>
+</html>
